@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <input id="new-todo-text" type="text" placeholder="enter something todo">
-    <button id='add-todo'>Add Todo</button>
+
     <input id='search-text' type='text' placeholder="filter todos">
 
-    <div id="todos">
+    <label>
+        <input id="hide-completed" type="checkbox"> Hide Completed
+    </label>
 
-    </div>
+    <div id="todos"></div>
 
+    <form id='new-todo'>
+        <input type="text" placeholder="Add Todo Here" name="newItem">
+        <button>Add Todo</button>
+    </form>
+
+
+    <script src="todo-function.js"></script>
     <script src='todo-script.js'></script>
 </body>
+
 </html>
